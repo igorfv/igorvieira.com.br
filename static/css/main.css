@@ -1,0 +1,86 @@
+* { padding:0; margin:0; }
+a { text-decoration:none; }
+
+body { font:13px Helvetica, Arial; color:#000; }
+
+
+
+/* COLORS */
+.bg { background:#368b76; }
+
+a { color:#368b76; }
+a:hover { color:#275f51; }
+
+a.off { color:#777 !important; cursor:not-allowed; }
+a.info { cursor:help; }
+
+h3 a { color:#275f51; }
+h3 a:hover { color:#368b76; }
+
+
+
+
+
+#header { display:block; position:fixed; top:0; left:0; width:100%; height:103px; overflow:hidden; }
+#header.compact { cursor:pointer; }
+#header .bg { position:absolute; top:0; left:0; width:1920px; height:100%; }
+#header h1 { position:absolute; top:40px; left:50%; margin-left:-580px; color:#FFF; font:bold 48px Helvetica, Arial; }
+#header h1 div { overflow:hidden; display:inline-block; }
+#header h1 span { overflow:hidden; display:inline-block; }
+#header h1 span.a { width:80px; }
+#header h1 span.b { width:105px; }
+
+#links { position:absolute; top:0; right:50%; margin-right:-580px; }
+#links .barra { position:absolute; top:0; right:0; width:30px; height:85px; background:#f2f2f2; opacity:0.1; }
+#links .icons { position:absolute; top:40px; right:17px; width:25px; }
+#links .icons a { position:relative; float:right; width:25px; height:25px; line-height:25px; color:#FFF; text-align:right;
+	-webkit-transition: all 0.1s ease-in-out;	-moz-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out;	transition: all 0.1s ease-in-out;
+	-webkit-border-radius: 2px; border-radius: 2px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+#links .icons a:hover { background-position:bottom left; }
+
+#links .icons a span { position:absolute; top:0; right:25px; overflow:hidden; width:0; opacity:0; padding-right:5px;
+	-webkit-transition: all 0.2s ease-in-out;	-moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out;	transition: all 0.2s ease-in-out;
+}
+#links .icons a:hover span { width:55px; opacity:1; }
+
+#links .icons .github { background:url('../img/bt_git.png') top left; }
+#links .icons .linkedin { margin-top:5px; background:url('../img/bt_lin.png') top left; }
+
+
+
+/*ANIMAÇÕES DA BARRA EM GERAL*/
+ /* Barra de links */
+		#links { -webkit-transition: all 0.4s ease-in-out;	-moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out;	transition: all 0.4s ease-in-out; }
+		#header.compact #links { margin-right:487px; }
+
+		#links .barra { -webkit-transition: all 0.2s ease-in-out;	-moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out;	transition: all 0.2s ease-in-out; }
+		#header.compact #links .barra { height:47px }
+
+		#links .icons { -webkit-transition: all 0.2s ease-in-out;	-moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out;	transition: all 0.2s ease-in-out; }
+		#header.compact #links .icons { top:-100px; }
+	
+	/* Logo */
+		#header .bg { -webkit-transition: all 0.5s ease-in-out;	-moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out;	transition: all 0.5s ease-in-out; }
+		#header.compact .bg { width:100px; left:50%; margin-left:-580px; }
+		
+		#header h1 { -webkit-transition: all 0.4s ease-in-out;	-moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out;	transition: all 0.4s ease-in-out; }
+		#header.compact h1 { word-spacing: -16px; margin-left:-570px; }
+		
+		#header h1 span { -webkit-transition: all 0.4s ease-in-out;	-moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out;	transition: all 0.4s ease-in-out; }
+		#header.compact h1 span { width:0; }
+		
+
+
+#main { margin-top:150px; }
+#main .item { margin-bottom:150px; padding-bottom:150px; border-bottom:1px dashed #EEE; overflow:hidden; }
+#main .item .container { width:1160px; margin:0 auto;}
+#main .item .images { float:right; width:850px; padding-top: 5px; }
+#main .item .images img { width:850px; margin-bottom:50px; }
+
+#main .item .bar { float:left; width:260px; }
+#main .item .bar h2 { font:bold 24px Helvetica, Arial; }
+#main .item .bar h2 span { font:bold 15px Helvetica, Arial; color:#BBB; }
+#main .item .bar h3 a { display:inline-block; font:bold 15px Helvetica, Arial; background: url(../img/link.png) left center no-repeat; text-indent: 15px; }
+#main .item .bar h3 a.off { background-image: url(../img/link_break.png); }
+#main .item .bar p { margin:30px 0 0 20px; color:#555; line-height:20px; }
