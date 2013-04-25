@@ -9,7 +9,7 @@ $(function(){
 	});
 	
 	$(window).bind('scroll', function(){
-		if(window.scrollY < 20)
+		if(window.scrollY < 50)
 		{
 			$('#header').removeClass('compact');
 		}
