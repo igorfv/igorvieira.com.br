@@ -33,3 +33,34 @@
   src: url("../fonts/museosans-900/museosans-900.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans-900/museosans-900.woff") format("woff"), url("../fonts/museosans-900/museosans-900.ttf") format("truetype"), url("../fonts/museosans-900/museosans-900.svg#MuseoSans300") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+/* Global vars */
+/* general */
+#main {
+  min-width: 988px;
+  margin-top: 50px; }
+
+/* hearder */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: block;
+  background: #0c81c7; }
+
+header h1 {
+  float: left;
+  font: 30px/50px "MuseoSans100", arial;
+  color: #FFF;
+  margin: 0 0 0 30px;
+  padding: 0; }
+
+header .sub {
+  float: left;
+  font: 17px/50px "MuseoSans300", arial;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 0 30px;
+  padding: 0 0 0 30px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2); }
