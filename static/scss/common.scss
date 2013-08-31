@@ -56,7 +56,11 @@
 
 
 /* Global vars */
-$darkblue : #0c81c7;
+$maincolor : #2d74ab;
+$secundarycolor : #1f5177;
+$lightcolor : #FFF;
+$darkcolor : #00628B;
+
 $topheight : 50px;
 
 $museo100 : "MuseoSans100", arial;
@@ -66,15 +70,106 @@ $museo700 : "MuseoSans700", arial;
 $museo900 : "MuseoSans900", arial;
 
 
+/* =============================
+  MOBILE FIRST
+============================= */
+
 /* general */
-#main { min-width: 988px; margin-top: $topheight; }
+#main { margin-top: $topheight;
+}
 
 /* hearder */
-header { position:fixed; top:0; left:0; width: 100%; height: $topheight; display:block; background:$darkblue; }
-header h1 { float: left; font: 30px/#{$topheight} $museo100; color: #FFF; margin: 0 0 0 30px; padding: 0; }
-header .sub { float: left; font: 17px/#{$topheight} $museo300; color: rgba(255,255,255,0.7); margin: 0 0 0 30px; padding: 0 0 0 30px; border-left: 1px solid rgba(255,255,255,0.2); }
+header {
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: $topheight;
+  display:block;
+  background:$maincolor;
+}
+header h1 {
+  float: left;
+  font:25px/#{$topheight} $museo100;
+  letter-spacing:-1px;
+  color: $lightcolor;
+  margin:0;
+  background:$maincolor;
+}
+header h1 a {
+  color: $lightcolor;
+  padding: 0 10px 0 10px;
+  display:inline-block;
+  text-decoration:none;
+}
+header h1 a:hover,
+header h1 a:focus {
+  background: $secundarycolor;
+}
+header .sub {
+  float: left;
+  font: 14px/#{$topheight} $museo500;
+  color: $lightcolor;
+  padding: 0 0 0 10px;
+  border-left:1px solid $lightcolor;
+  opacity:0.5;
+}
+
+
+/* menu */
+#nav {
+  display: block;
+}
+#nav ul,
+#nav ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#nav ul li {
+  width: 100%;
+  background: $secundarycolor;
+  border-bottom: 1px solid $maincolor;
+}
+#nav ul li a {
+  display: block;
+  text-align: center;
+  font:16px $museo700;
+  color:$lightcolor;
+  padding: 10px 5px;
+  text-decoration: none;
+}
 
 
 
 
 
+
+
+
+
+/* =============================
+  SMALL
+============================= */
+
+@media only screen and (min-width: 480px) {
+
+}
+
+
+/* =============================
+  INTERMEDIATE
+============================= */
+
+@media only screen and (min-width: 768px) {
+
+}
+
+
+/* =============================
+  WIDE
+============================= */
+
+@media only screen and (min-width: 1140px) {
+
+}
